@@ -29,7 +29,7 @@ This is a Harry Potter-themed interactive quiz website that sorts users into one
 
 ## 🌐 Visit the Live Website
 Click the link below to view the hosted website:
-👉 [magic-sort](https://github.com/srijonichakraborty/magic-sort.git)
+👉 [magic-sort](https://magicsort.netlify.app/)
 
 ## 📸 Preview
 (Add a screenshot here if you’d like – it boosts your project’s visual appeal)
