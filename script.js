@@ -422,13 +422,20 @@ function completeFinalTiebreaker() {
 
 // Show results
 function showResults() {
+    // Hide all other screens first
+    quizScreen.classList.remove('active');
     tiebreakerScreen.classList.remove('active');
     finalTiebreakerScreen.classList.remove('active');
-    resultsScreen.classList.add('active');
     
+    // Then show results
+    resultsScreen.classList.add('active');
+
     // Play sorting sound
     sortingSound.play();
     
+    // Scroll to top in case page was scrolled down
+    window.scrollTo(0, 0);
+
     // Get house info
     const house = houseInfo[finalHouse];
     
@@ -475,6 +482,8 @@ function showResults() {
     clearProgress();
 }
 
+
+
 // Save progress to localStorage
 function saveProgress() {
     const progress = {
@@ -501,13 +510,6 @@ function clearProgress() {
     localStorage.removeItem('sortingQuizProgress');
 }
 
-
-// Toggle background music mute
-// function toggleMusic() {
-//     backgroundMusic.muted = !backgroundMusic.muted;
-//     musicToggleBtn.textContent = backgroundMusic.muted ? "Unmute Music" : "Mute Music";
-//     musicToggleBtn.classList.toggle('muted', backgroundMusic.muted);
-// }
 
 
 // Event Listeners
@@ -590,12 +592,3 @@ document.addEventListener('click', () => {
     }
 }, { once: true });
 
-// // play music automatically
-// document.addEventListener('DOMContentLoaded', () => {
-//     backgroundMusic.play().catch(error => {
-//         console.log("Autoplay prevented, will wait for user interaction:", error);
-//         backgroundMusic.muted = true; // Mute by default if autoplay fails
-//         musicToggleBtn.textContent = "Unmute Music";
-//         musicToggleBtn.classList.add('muted');
-//     });
-// });
