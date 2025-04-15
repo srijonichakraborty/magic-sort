@@ -137,7 +137,7 @@ const finalTiebreakerQuestionData = {
 const houseInfo = {
     gryffindor: {
         name: "Gryffindor",
-        crest: "assets/images/gryffindor-crest.jpeg",
+        crest: "assets/images/gryffindor-crest.jpg",
         motto: "Fortune Favors the Bold",
         description: "Gryffindor values bravery, daring, nerve, and chivalry. Its members are typically courageous and adventurous, willing to stand up for what is right even in the face of adversity. The house colors are scarlet and gold, and its symbol is the lion.",
         color: "var(--gryffindor-red)",
@@ -145,7 +145,7 @@ const houseInfo = {
     },
     hufflepuff: {
         name: "Hufflepuff",
-        crest: "assets/images/hufflepuff-crest.png",
+        crest: "assets/images/hufflepuff-crest.jpg",
         motto: "Those Patient Hufflepuffs Are True and Unafraid of Toil",
         description: "Hufflepuff values hard work, patience, justice, and loyalty. Its members are typically kind, fair, and dedicated. The house colors are yellow and black, and its symbol is the badger.",
         color: "var(--hufflepuff-yellow)",
@@ -161,7 +161,7 @@ const houseInfo = {
     },
     slytherin: {
         name: "Slytherin",
-        crest: "assets/images/slytherin-crest.jpeg",
+        crest: "assets/images/slytherin-crest.jpg",
         motto: "Ambition Will Take You Far",
         description: "Slytherin values ambition, cunning, leadership, and resourcefulness. Its members are typically determined, proud, and achievement-oriented. The house colors are green and silver, and its symbol is the serpent.",
         color: "var(--slytherin-green)",
